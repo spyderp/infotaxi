@@ -1,0 +1,131 @@
+<?php
+/**
+* $Id$
+
+* MEDUCACOMPA
+*
+* El software MEDUCA COMPRA es propiedad de la UTP.
+* MEDUCA tiene los derechos de uso y personalización del mismo
+* pero no puede comercializar o ceder a ninguna persona natural
+* o jurídica, pública o privada, en ningún tiempo.
+*
+* @package diticui
+* @subpackage helpers
+* @author Ricardo Haynes
+* @copyright UTP
+*/
+define('FILTER_SEARCHEQUAL', 1);
+define('FILTER_SEARCHLIKE', 2);
+define('FILTER_SEARCHBETWEEN', 3);
+define('FILTER_SEARCHUP', 4);
+define('FILTER_SEARCHDOWN', 5);
+
+App::import('Core', 'SessionComponent');
+class FilterHelper extends AppHelper {
+    var $helpers = array('Html', 'Session', 'Form','Diticui.Jqueryui');
+        protected function _getOperador($name, $tipo){
+            $objeto = '';
+            switch($tipo){
+                case 'text':
+                    $options = array(
+                        FILTER_SEARCHEQUAL => __('Igual a: ', true),
+                        FILTER_SEARCHLIKE => __('Contiene: ', true),
+                    );
+                    $objeto = $this->Form->select($name . '-operator', $options, null, array('empty' => false));
+                    break;
+               case 'numeric':
+                   $options = array(
+                        FILTER_SEARCHEQUAL => __('Igual a: ', true),
+                        FILTER_SEARCHUP => __('Es mayor que: ', true),
+                        FILTER_SEARCHDOWN => __('Es menor que: ', true),
+                        FILTER_SEARCHBETWEEN => __('Está entre: ', true),
+                    );
+                    $objeto = $this->Form->select($name . '-operator', $options, null, array('empty' => false));
+                    break;                                  
+            }
+            return $objeto;
+        }
+        //Adicionar nueva funcion para crear el buscardo
+        public function createFilter($modelo = null, $label = null){
+            $this->Jqueryui->Js->get('.filter-search');
+            $this->Jqueryui->Js->event('click', '$("#frmSearch").toggle();');
+        	$output  = '<div id="contentSearch" class="vfilters">';
+            $output .= $this->Html->image('filefind.png', array('class'=>'filter-search'));
+            $output .= '<div id="frmSearch" class="vbuscador">';
+            $output .= '<fieldset><legend>'.(is_string($label) == true )?$label:''.'</legend>';            
+            return $output.$this->Form->create($modelo);
+        }
+        //Crear el formulario
+        public function frmFilter($opciones = array(),$modelo = null){
+               $formulario = '';
+               $optFiltro = '';
+               $entre = '';
+               $sw = false;
+               $name = '';
+               foreach($opciones as $indice => $valor ){
+                   $name = $indice;
+                   foreach($valor as $subindice => $contenido){
+                       if(!is_null($contenido)){
+                        switch($subindice){
+                           case 'tipo':
+                               if($contenido == 'numeric'){
+                                   $options['after'] = '&nbsp;'.$this->Form->input($name.'1',array('type' => 'text',
+                                                                                          'size' => '10',
+                                                                                          'label' => false,
+                                                                                          'div' => null));
+                                   $options['between'] = $this->_getOperador($name,$contenido).'&nbsp;';
+                               }elseif($contenido == 'text'){
+                                   $options['between'] = $this->_getOperador($name,$contenido).'&nbsp;';
+                               }elseif($contenido == 'date'){
+                                   $this->Jqueryui->datepicker($modelo.ucfirst($name), null, null, null, 0, 'focus');
+                               }elseif($contenido == 'select'){
+
+                               }
+                               if($contenido == 'boolean'){
+                                    $options['type'] = 'checkbox';
+                               }elseif(($contenido == 'text') || ($contenido == 'numeric')){
+                                   $options['type'] = 'text';
+                               }elseif($contenido == 'select'){
+                                   $options['type'] = 'select';
+                                   $options['empty'] = __('Seleccione...', true);
+                                   if($name == 'estado'){
+                                    $options['options'] = array('1' => 'Activo', '0'=>'Inactivo');
+
+                                   }
+                               }
+                               break;
+                           case 'label':
+                               $options['label'] = $contenido;
+                               break;
+                           case 'classType':
+                               $options['class'] = $contenido;
+                               break;
+                           case 'datos':
+                               if(!is_null($valor)){
+                                    $options['options'] = $valor;
+                               }
+                            case 'sino':
+                               if(! is_null($valor) && isset($valor['datos'])){
+                                    $options['options'] = $valor['datos'];
+                               }
+                               break;
+                        }
+                       }
+                   }
+                   $formulario .= $optFiltro.$this->Form->input($name, $options);
+                   $optFiltro = '';
+                   $options = array();
+               }
+
+               return $formulario;
+        }
+        public function endFilter(){
+            $output  = $this->Form->submit(__('Buscar', true));
+            $output .= $this->Form->button('Limpiar', array('type'=>'button','class'=>'cleanButton'));
+            $output .= $this->Form->button('Restablecer', array('type'=>'button','class'=>'cleanButton','onclick'=>'window.location.href=window.location.href'));
+            $output .= $this->Form->end();
+            $output .= '</fieldset>';
+            $output .= '</div></div>';
+            return $output;
+        }
+}

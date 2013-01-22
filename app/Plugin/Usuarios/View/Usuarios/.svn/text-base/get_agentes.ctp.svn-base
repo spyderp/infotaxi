@@ -1,0 +1,7 @@
+<?php
+if(!empty($jefeyAgentes)){
+	echo '<option value="">Seleccione...</option>';
+foreach($jefeyAgentes as $row=>$datos){
+	echo '<option value="'.$row.'">'.$datos.'</option>';
+}
+}

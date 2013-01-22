@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<privileges>
+	<group id="usuarios" name="Usuarios">
+		<privilege id="usuarios_index" label="Listar Usuarios">
+			<controller>usuarios</controller>
+			<action>index</action>
+		</privilege>
+		<privilege id="usuarios_clientes" label="Listar Cliente">
+			<controller>usuarios</controller>
+			<action>clientes</action>
+		</privilege>
+		<privilege id="usuarios_view" label="Ver Usuarios">
+			<controller>usuarios</controller>
+			<action>view</action>
+		</privilege>
+		<privilege id="usuarios_add" label="Agregar Usuarios">
+			<controller>usuarios</controller>
+			<action>add</action>
+		</privilege>
+		<privilege id="usuarios_edit" label="Editar Usuarios">
+			<controller>usuarios</controller>
+			<action>edit</action>
+		</privilege>
+		<privilege id="usuarios_editCliente" label="Editar Clientes (Administración)">
+			<controller>usuarios</controller>
+			<action>editCliente</action>
+		</privilege>
+		<privilege id="usuarios_editarCliente" label="Editar Clientes">
+			<controller>usuarios</controller>
+			<action>editarCliente</action>
+		</privilege>
+		<privilege id="usuarios_delete" label="Eliminar Usuarios">
+			<controller>usuarios</controller>
+			<action>delete</action>
+		</privilege>
+        <privilege id="roles_index" label="Listar Roles">
+			<controller>roles</controller>
+			<action>index</action>
+		</privilege>
+		<privilege id="roles_add" label="Agregar Roles">
+			<controller>roles</controller>
+			<action>add</action>
+		</privilege>
+		<privilege id="roles_edit" label="Editar Roles">
+			<controller>roles</controller>
+			<action>edit</action>
+		</privilege>
+		<privilege id="roles_delete" label="Eliminar Roles">
+			<controller>roles</controller>
+			<action>delete</action>
+		</privilege>
+    </group>
+    <group id="taxis" name="Taxi">
+    	<privilege id="taxis_index" label="Listar Taxi">
+			<controller>taxis</controller>
+			<action>index</action>
+		</privilege>
+		<privilege id="taxis_lista" label="Listar Me Taxi">
+			<controller>taxis</controller>
+			<action>lista</action>
+		</privilege>
+		<privilege id="taxis_add" label="Agregar Taxi">
+			<controller>taxis</controller>
+			<action>add</action>
+		</privilege>
+		<privilege id="taxis_getAdd" label="Agregar Vehiculo">
+			<controller>taxis</controller>
+			<action>getAdd</action>
+		</privilege>
+		<privilege id="taxis_edit" label="Editar Taxi">
+			<controller>taxis</controller>
+			<action>edit</action>
+		</privilege>
+		<privilege id="taxis_editCliente" label="Editar Vehiculo">
+			<controller>taxis</controller>
+			<action>editCliente</action>
+		</privilege>
+		<privilege id="taxis_delete" label="Eliminar Taxi">
+			<controller>taxis</controller>
+			<action>delete</action>
+		</privilege>
+		<privilege id="taxis_home" label="Inicio para clientes">
+			<controller>taxis</controller>
+			<action>home</action>
+		</privilege>
+    </group>
+    <group id="conductores" name="Conductores">
+    	<privilege id="conductores_index" label="Listar Conductores">
+			<controller>conductores</controller>
+			<action>index</action>
+		</privilege>
+    	<privilege id="conductores_add" label="Agregar Conductor">
+			<controller>conductores</controller>
+			<action>add</action>
+		</privilege>
+		 	<privilege id="conductores_anotherAdd" label="Agregar otros taxis">
+			<controller>conductores</controller>
+			<action>anotherAdd</action>
+		</privilege>
+		<privilege id="conductores_edit" label="Editar Conductor">
+			<controller>conductores</controller>
+			<action>edit</action>
+		</privilege>
+    	<privilege id="conductores_setIndex" label="Listar Conductores x vehiculo">
+			<controller>conductores</controller>
+			<action>setIndex</action>
+		</privilege>
+    	<privilege id="conductores_setAdd" label="Agregar Conductor x Cliente">
+			<controller>conductores</controller>
+			<action>setAdd</action>
+		</privilege>
+		<privilege id="conductores_editCliente" label="Editar Conductor x Cliente">
+			<controller>conductores</controller>
+			<action>editCliente</action>
+		</privilege>
+    	<privilege id="conductores_delete" label="Eliminar Conductor">
+			<controller>conductores</controller>
+			<action>delete</action>
+		</privilege>
+    </group>
+    <group id="marcas" name="Marcas">
+    	<privilege id="marcas_index" label="Listar Marcas">
+			<controller>marcas</controller>
+			<action>index</action>
+		</privilege>
+    	<privilege id="marcas_add" label="Agregar Marca">
+			<controller>marcas</controller>
+			<action>add</action>
+		</privilege>
+		<privilege id="marcas_edit" label="Editar Marca">
+			<controller>marcas</controller>
+			<action>edit</action>
+		</privilege>
+    	<privilege id="marcas_delete" label="Eliminar Marca">
+			<controller>marcas</controller>
+			<action>delete</action>
+		</privilege>
+    </group>
+    <group id="estados" name="Estados">
+    	<privilege id="estados_index" label="Listar estados">
+			<controller>estados</controller>
+			<action>index</action>
+		</privilege>
+    	<privilege id="estados_add" label="Agregar Estado">
+			<controller>esttados</controller>
+			<action>add</action>
+		</privilege>
+		<privilege id="estados_edit" label="Editar Estado">
+			<controller>estados</controller>
+			<action>edit</action>
+		</privilege>
+    	<privilege id="estados_delete" label="Eliminar Estado">
+			<controller>estados</controller>
+			<action>delete</action>
+		</privilege>
+    </group>
+    <group id="quejas" name="Quejas">
+    	<privilege id="quejas_index" label="Todas las quejas">
+			<controller>quejas</controller>
+			<action>index</action>
+		</privilege>
+		<privilege id="quejas_lista" label="Quejas por taxi">
+			<controller>quejas</controller>
+			<action>lista</action>
+		</privilege>
+    </group>
+    <group id="historialPagos" name="taxi">
+    	<privilege id="historialPagos_delete" label="Historial de Pagos">
+			<controller>historialPagos</controller>
+			<action>index</action>
+		</privilege>
+    </group>	
+     <group id="contenidos" name="FAQ">
+    	<privilege id="contenidos_index" label="Lista FAQ">
+			<controller>contenidos</controller>
+			<action>index</action>
+		</privilege>
+		<privilege id="contenidos_add" label="FAQ Agregar">
+			<controller>contenidos</controller>
+			<action>add</action>
+		</privilege>
+		<privilege id="contenidos_edit" label="Editar FAQ">
+			<controller>contenidos</controller>
+			<action>edit</action>
+		</privilege>
+		<privilege id="contenidos_delete" label="Borrar FAQ">
+			<controller>contenidos</controller>
+			<action>delete</action>
+		</privilege>
+    </group>	
+</privileges>

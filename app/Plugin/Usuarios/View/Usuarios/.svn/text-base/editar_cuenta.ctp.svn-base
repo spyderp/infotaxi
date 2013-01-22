@@ -1,0 +1,4 @@
+
+<h2><?php echo sprintf(__('Editar Cuenta ID %d', true), $html->value('Usuario.id')); ?></h2>
+
+<?php echo $this->element('form_usuario', array('accion' => 'editarCuenta')); ?>
