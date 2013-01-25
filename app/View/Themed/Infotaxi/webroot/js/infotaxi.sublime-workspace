@@ -1,0 +1,1093 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"slide",
+				"slideUp"
+			],
+			[
+				"enco",
+				"json_encode"
+			],
+			[
+				"fa",
+				"false"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"meta",
+				"meta"
+			],
+			[
+				"wi",
+				"widget"
+			],
+			[
+				"la",
+				"label"
+			],
+			[
+				"max",
+				"max_length"
+			],
+			[
+				"get",
+				"get_template	(imported, instance)"
+			],
+			[
+				"d",
+				"django"
+			],
+			[
+				"H",
+				"HttpResponse"
+			],
+			[
+				"re",
+				"request"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"mensaje",
+				"mensajeTodos"
+			],
+			[
+				"enviar",
+				"enviarMensaje"
+			],
+			[
+				"pr",
+				"prefixfree.js"
+			],
+			[
+				"ar",
+				"article"
+			],
+			[
+				"so",
+				"solid"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"a",
+				"article"
+			],
+			[
+				"h",
+				"h1"
+			],
+			[
+				"mensa",
+				"mensaje"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"se",
+				"section"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"o",
+				"overflow"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"l",
+				"line-height"
+			],
+			[
+				"border",
+				"border-collapse"
+			],
+			[
+				"us",
+				"uses"
+			],
+			[
+				"im",
+				"imageName"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/spyder/workspace/www/infotaxi/app/View/Themed/Infotaxi/webroot/css/style.css",
+			"settings":
+			{
+				"buffer_size": 8076,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/spyder/workspace/www/infotaxi/app/Plugin/Taxi/View/Taxis/home.ctp",
+			"settings":
+			{
+				"buffer_size": 5643,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "clientesHome.js",
+			"settings":
+			{
+				"buffer_size": 1219,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/spyder/workspace/www/infotaxi/app/Plugin/Usuarios/Controller/UsuariosController.php",
+			"settings":
+			{
+				"buffer_size": 10663,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/spyder/workspace/www/infotaxi/app/Plugin/Usuarios/View/Usuarios/editar_cliente.ctp",
+			"settings":
+			{
+				"buffer_size": 1033,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"con",
+				"Package Control: Install Package"
+			],
+			[
+				"subli",
+				"SublimeLinter: Reset"
+			],
+			[
+				"co",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"pal",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"",
+				"Set Syntax: PHP"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Taxi/Controller/TaxisController.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Usuarios/Config/routes.php",
+		"/home/spyder/workspace/www/infotaxi/app/Config/privileges.xml",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Usuarios/View/Usuarios/editar_cliente.ctp",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Usuarios/View/Usuarios/edit.ctp",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Usuarios/View/Roles/edit.ctp",
+		"/home/spyder/workspace/www/infotaxi/app/Config/core.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Usuarios/Controller/UsuariosController.php",
+		"/home/spyder/workspace/www/infotaxi/app/Controller/AppController.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Usuarios/Controller/RolesController.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Usuarios/Model/Rol.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Usuarios/View/Roles/index.ctp",
+		"/home/spyder/workspace/python/mejorandolapython/app/demo/admin.py",
+		"/home/spyder/workspace/python/mejorandolapython/app/demo/forms.py",
+		"/home/spyder/workspace/python/mejorandolapython/app/demo/models.py",
+		"/home/spyder/workspace/python/mejorandolapython/app/demo/views.py",
+		"/home/spyder/workspace/python/mejorandolapython/app/app/settings.py",
+		"/home/spyder/workspace/nodejs/file/server.js",
+		"/home/spyder/workspace/nodejs/file/chat/index.html",
+		"/home/spyder/workspace/nodejs/file/chat/script.js",
+		"/home/spyder/workspace/nodejs/file/server-chat.js",
+		"/home/spyder/workspace/nodejs/file/chat/style.css",
+		"/home/spyder/workspace/nodejs/file/chat/socket.io.js",
+		"/home/spyder/workspace/nodejs/file/public/jquery.js",
+		"/home/spyder/workspace/nodejs/file/package.json",
+		"/home/spyder/workspace/www/infotaxi/app/View/Themed/Infotaxi/webroot/js/public.js",
+		"/home/spyder/workspace/www/infotaxi/app/View/Themed/Infotaxi/Layouts/public.ctp",
+		"/home/spyder/workspace/www/infotaxi/app/View/Themed/Infotaxi/webroot/css/public.css",
+		"/home/spyder/workspace/www/infotaxi/app/Controller/ContenidosController.php",
+		"/home/spyder/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/spyder/workspace/www/mejorandola/index.html",
+		"/home/spyder/workspace/www/mejorandola/css/style.css",
+		"/home/spyder/workspace/www/mejorandola/scripts/codigo.js",
+		"/home/spyder/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/spyder/workspace/www/mejorandola/scripts/jquery.js",
+		"/home/spyder/workspace/www/mejorandola/scripts/prefixfree.js",
+		"/home/spyder/workspace/www/mejorandola/css/normalize.css",
+		"/home/spyder/workspace/Aptana/prototipo/jquery-ui.js",
+		"/home/spyder/workspace/Aptana/prototipo/index.html",
+		"/home/spyder/workspace/Aptana/prototipo/script.js",
+		"/home/spyder/workspace/Aptana/prototipo/jquery-ui.css",
+		"/home/spyder/Descargas/mobile_website/app.html",
+		"/home/spyder/workspace/www/infotaxi/app/Config/routes.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Usuarios/Controller/Component/PermissionComponent.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Qrcode/View/Helper/QrcodeHelper.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Taxi/Controller/EstadosController.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Taxi/View/Estados/index.ctp",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Qrcode/Controller/Component/QrcodeComponent.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Taxi/View/Taxis/index.ctp",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Renamezero/View/Helper/HtmlExtendHelper.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Qrcode/View/Helper/AppHelper.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Usuarios/Controller/UsuariosAppController.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Qrcode/Controller/Component/ReCaptchaComponent.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Qrcode/Vendor/phpqrcode/INSTALL",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Qrcode/Vendor/phpqrcode/index.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Qrcode/Vendor/phpqrcode/phpqrcode.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Qrcode/Vendor/phpqrcode/qrconst.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Renamezero/Lib/recaptchalib.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Taxi/Model/Taxi.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Taxi/Model/Queja.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Taxi/Model/Marca.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Taxi/Model/Estado.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Taxi/Model/Conductor.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Taxi/Controller/QuejasController.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Taxi/Controller/MarcasController.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Taxi/Controller/ConductoresController.php",
+		"/home/spyder/workspace/www/infotaxi/app/Controller/UsuariosController.php",
+		"/home/spyder/workspace/www/infotaxi/app/Model/AppModel.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Usuarios/Model/Usuario.php",
+		"/home/spyder/workspace/www/infotaxi/app/Model/Usuario.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Usuarios/View/Usuarios/index.ctp",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Renamezero/View/Helper/JqueryEngineHelper.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Renamezero/Controller/component/ReCaptchaComponent.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Usuarios/Model/Privilege.php",
+		"/home/spyder/workspace/www/infotaxi/app/Config/bootstrap.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Taxis/Model/TaxiAppModel.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Taxis/Controller/TaxiAppController.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Usuarios/Model/UsuariosAppModel.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Renamezero/Controller/archivos_controller.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Qrcode/Model/QrCodeAppModel.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Renamezero/Model/RenamezeroAppModel.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Renamezero/Model/Archivo.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Qrcode/Controller/QrcodeAppController.php",
+		"/home/spyder/workspace/www/infotaxi/app/Plugin/Renamezero/Controller/RenamezeroAppController.php",
+		"/home/spyder/workspace/www/infotaxi/app/Config/database.php",
+		"/home/spyder/workspace/www/infotaxi/app/Config/database.php.default"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"nuevamente",
+			"var_dump",
+			"4",
+			"				<",
+			"desyrel",
+			"seo",
+			"navegation",
+			"\n#",
+			"	<",
+			"#historial{ width: 40%; background: rgba(0,0,0,0.6); border-radius:0.5em; box-shadow: rgba(0,0,0,0.5) 5px 5px 10px; text-align: left; margin: 0 2% 6em 1em; padding: 1em; }",
+			"}",
+			"disable",
+			"//'on' => 'create', // Limit validation to 'create' or 'update' operations",
+			"//'last' => false, // Stop validation after this rule",
+			"				//'last' ",
+			"//'last'",
+			"false",
+			"				//'last' => false",
+			"//'last' => false",
+			"			),",
+			"\n			",
+			"				//'last' => false, // Stop validation after this rule\n				//'on' => 'create', // Limit validation to 'create' or 'update' operations\n",
+			" =>",
+			"' ",
+			"//'last'",
+			"=> ",
+			" =>",
+			"				//'last' ",
+			"//'last'",
+			"				//'",
+			"				//'last' => false, // Stop validation after this rule\n				//'on' => 'create', // Limit validation to 'create' or 'update' operations",
+			"//'last' => false, // Stop validation after this rule\n				//'on' => 'create', // Limit validation to 'create' or 'update' operations",
+			"//'last'",
+			"				//'"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/spyder/workspace/www/infotaxi/app/View/Themed/Infotaxi/webroot/css/style.css",
+					"settings":
+					{
+						"buffer_size": 8076,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6574,
+								6574
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5567.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/spyder/workspace/www/infotaxi/app/Plugin/Taxi/View/Taxis/home.ctp",
+					"settings":
+					{
+						"buffer_size": 5643,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1803,
+								1803
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 428.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "clientesHome.js",
+					"settings":
+					{
+						"buffer_size": 1219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								876,
+								876
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/spyder/workspace/www/infotaxi/app/Plugin/Usuarios/Controller/UsuariosController.php",
+					"settings":
+					{
+						"buffer_size": 10663,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6887,
+								6887
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4014.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/spyder/workspace/www/infotaxi/app/Plugin/Usuarios/View/Usuarios/editar_cliente.ctp",
+					"settings":
+					{
+						"buffer_size": 1033,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								136,
+								136
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"View/Themed/Infotaxi/webroot/css/public.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 303.0,
+	"status_bar_visible": true
+}

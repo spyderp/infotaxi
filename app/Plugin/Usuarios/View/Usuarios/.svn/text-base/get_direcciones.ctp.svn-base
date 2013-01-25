@@ -1,0 +1,18 @@
+<?php
+/**
+ * $Id$
+ * MEDUCACOMPA
+ *
+ * El software MEDUCA COMPRA es propiedad de la UTP. MEDUCA
+ * tiene los derechos de uso y personalizaci�n del mismo
+ * pero no puede comercializar o ceder a ninguna persona natural o jur�dica,
+ * p�blica o privada, en ning�n tiempo.
+ *
+ * @package PLUGIN
+ * @subpackage controllers
+ * @author  Ricardo Portillo
+ * @copyright UTP
+ */
+foreach( $internos as $row=>$datos){
+	echo '<option value="'.$row.'">'.$datos.'</option>';
+}

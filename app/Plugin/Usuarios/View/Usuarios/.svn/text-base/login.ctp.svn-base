@@ -1,0 +1,35 @@
+<?php 
+if($browserExist==1){
+$modal= '<div style="width: 750px; margin-bottom:10px; ">';	
+		$modal.= $this->Formato->titulo(__('Esta usando Internet Explorer 7 o inferior', true));
+		$modal.= '<div class="contentbody" style="font-size:13px;">';
+		$modal.=$this->Html->para('','Se ha detectado que esta intentando acceder al sistema Help Desk Ditic usando Internet Explorer 7 o inferior, se le recomienda no acceder al sistema por medio de este navegador ya que no cumple los requisitos para un optimo funcionamiento de la plataforma.', array('align'=>'justify'));
+		$modal.=$this->Html->para('', 'Para acceder al sistema puede actualizar su Internet Explorer a la versión más reciente o utilizar uno de los siguiente navegadores.');
+		$modal.=$this->Html->para('', '<b>'.$html->image('chrome.png', array('title' => 'Descargar Google Chrome', 'url' => 'http://www.google.com/chrome', 'border'=>0, 'align'=>'middle')).' Google Chrome &nbsp;&nbsp;'.$html->image('firefox.png', array('title' => 'Descargar Mozilla Firefox', 'url' => 'http://www.mozilla.com/es-ES/firefox/', 'border'=>0, 'align'=>'middle')).' Mozilla Firefox   &nbsp;&nbsp;'.$html->image('safari.png', array('title' => 'Descargar Apple Safari', 'url' => 'http://www.apple.com/es/safari/', 'border'=>0, 'align'=>'middle')).' Apple Safari</b>', array('align'=>'center'));
+		$modal.=$this->Html->para('', '<br><center>Puede descargar los navegadores al hacer click sobre la imagen.</center>');
+		$modal.=$this->Html->para('', '<b>Para actualizar Internet Explorer haga click aquí...'.$html->image('internetexplorer.png', array('title' => 'Descargar Internet Explorer', 'url' => 'http://windows.microsoft.com/es-ES/internet-explorer/products/ie/home', 'border'=>0, 'align'=>'middle')), array('align'=>'center'));
+		$modal.= '</div>';	
+		echo $modal;
+//$script="$.modal('$modal',{position:['15%']});";
+//$this->Html->scriptBlock("$(document).ready(function () { $('#UsuarioNombreUsuario').focus(); $script});", array('inline' => false));
+}else{
+?>
+<div class="portlet_principal">
+				<div class="portlet-header">Acceso al Sistema</div>
+				<div class="portlet-content">
+<?php echo $form->create('Usuario', array('action' => 'login')) ?>
+	<?php
+	 	  echo '<div class="input text required">';
+		  echo $form->input('email', array('div' => false, 'label' => __('Correo-e', true)));
+		  echo '<span style="font-size: 10pt">' . __('@utp.ac.pa', true) . '</span>';
+		  echo '</div>';
+	?>
+	<?php echo $form->input('password', array('label' => __('Contraseña', true))); ?>
+<?php echo $form->end(__('Enviar', true));?>
+</div>
+	   </div>	
+	   <br>
+	   <?php echo $html->link(__('¿Olvidó su contraseña?', true), '/password_recovery/password_recoverys/reset');
+?>
+<?php } ?>
+

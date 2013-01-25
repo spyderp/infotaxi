@@ -1,0 +1,14 @@
+body{ font-size:0.875em; }
+#header{background-color:#5b97bc;}
+h1{ margin:0; padding:0; font-size:1em; color:#fff; display: inline-block; }
+h2{margin:0; padding:0; font-size:0.875em; text-decoration:underline; font-style: italic;}
+h2, td{padding-left:5px;}
+#section .info{ font-size:0.75em; padding:5px; }
+label, td span, .taxiBox span{ display:inline-block;}
+label{ font-weight:bold; } 
+.conductorInfo{ padding-left:8px; }
+.taxiBox{ margin-top:5px; border-top:#222222; border-bottom:#222222; background-color: #C0C0C0; }
+.taxiBox h2{ color:#1D5987; }
+.taxiBox .content{overflow:hidden;  max-height: 160px; padding:8px; }
+#footer{ text-align: center; margin-top:5px; }
+.buton{ padding:6px 0px 0px; text-align: center; color:#fff; font-weight:bold; font-size:1.2em; background: -*-linear-gradient(to bottom, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 21%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C */ }

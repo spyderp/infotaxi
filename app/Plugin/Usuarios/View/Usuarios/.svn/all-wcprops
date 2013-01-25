@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/meducacompras/!svn/ver/1943/trunk/shditic/app/views/usuarios
+END
+agregar.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/meducacompras/!svn/ver/1598/trunk/shditic/app/views/usuarios/agregar.ctp
+END
+editar_password.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/meducacompras/!svn/ver/1598/trunk/shditic/app/views/usuarios/editar_password.ctp
+END
+home.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/meducacompras/!svn/ver/1943/trunk/shditic/app/views/usuarios/home.ctp
+END
+index.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/meducacompras/!svn/ver/1628/trunk/shditic/app/views/usuarios/index.ctp
+END
+ver.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/meducacompras/!svn/ver/1598/trunk/shditic/app/views/usuarios/ver.ctp
+END
+get_direcciones.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/meducacompras/!svn/ver/1598/trunk/shditic/app/views/usuarios/get_direcciones.ctp
+END
+login.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/meducacompras/!svn/ver/1736/trunk/shditic/app/views/usuarios/login.ctp
+END
+get_agentes.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/meducacompras/!svn/ver/1627/trunk/shditic/app/views/usuarios/get_agentes.ctp
+END
+editar.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/meducacompras/!svn/ver/1645/trunk/shditic/app/views/usuarios/editar.ctp
+END
+editar_cuenta.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/meducacompras/!svn/ver/1645/trunk/shditic/app/views/usuarios/editar_cuenta.ctp
+END
+_home.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/meducacompras/!svn/ver/1598/trunk/shditic/app/views/usuarios/_home.ctp
+END

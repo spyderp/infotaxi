@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+	<menu id="1" label="Inicio" link="true" class="application_home">
+				<controller>Usuarios</controller>
+				<action>home</action>
+	</menu>
+	<menu id="2" label="Crear Solicitud" link="true" class="page_add">
+				<controller>solicitudes</controller>
+				<action>agregar</action>
+	</menu>
+	<menu id="3" label="Solicitudes pendientes" link="true" class="hourglass">
+				<controller>solicitudes</controller>
+				<action>pendientes</action>
+	</menu>
+	<menu id="4" label="Lista solicitudes" link="true" class="vcard">
+				<controller>solicitudes</controller>
+				<action>index</action>
+	</menu>
+	<menu id="5" label="Quejas y Sugerencias" link="true" class="email">
+				<controller>buzon</controller>
+				<action>index</action>
+	</menu>
+	<menu id="6" label="Internas" link="false">		
+	</menu>
+	<menu id="7" label="Atender" link="true" class="page_white_copy">
+				<controller>solicitudes</controller>
+				<action>atender</action>
+	</menu>
+	<menu id="8" label="Solicitudes Pendientes" link="true" class="page_white_copy">
+				<controller>solicitudes</controller>
+				<action>pendientes</action>
+	</menu>
+	<menu id="9" label="Solicitudes en progreso" link="true" class="page_white_copy">
+				<controller>solicitudes</controller>
+				<action>enprogreso</action>
+	</menu>
+	<menu id="10" label="Solic. Departamento" link="true" class="page_white_copy">
+				<controller>planes</controller>
+				<action>grupoInternas</action>
+	</menu>
+	<menu id="11" label="Administracion" link="false">		
+	</menu>
+	<menu id="12" label="Clientes" link="true" class="page_white_copy">
+				<controller>clientes</controller>
+				<action>index</action>
+	</menu>
+	<menu id="13" label="Servicios" link="true" class="report">
+				<controller>servicios</controller>
+				<action>index</action>
+	</menu>
+	<menu id="14" label="Temas" link="true" class="page_white_copy">
+				<controller>temas</controller>
+				<action>index</action>
+	</menu>
+	<menu id="15" label="Departamento" link="true" class="building">
+				<controller>departamentos</controller>
+				<action>index</action>
+	</menu>
+	<menu id="16" label="Usuarios" link="true" class="user">
+				<controller>usuarios</controller>
+				<action>index</action>
+	</menu>
+	<menu id="17" label="Reportes" link="true" class="report">
+				<controller>reportes</controller>
+				<action>index</action>
+	</menu>
+	<menu id="18" label="Configuración" link="true" class="application_form">
+				<controller>configuraciones</controller>
+				<action>index</action>
+	</menu>
+</menus>

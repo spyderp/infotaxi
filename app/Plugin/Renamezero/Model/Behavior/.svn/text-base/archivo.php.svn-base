@@ -1,0 +1,87 @@
+<?php
+/**
+* $Id$
+
+* MEDUCACOMPA
+*
+* El software MEDUCA COMPRA es propiedad de la UTP. 
+* MEDUCA tiene los derechos de uso y personalización del mismo
+* pero no puede comercializar o ceder a ninguna persona natural 
+* o jurídica, pública o privada, en ningún tiempo.
+*
+* @package Diticui
+* @subpackage behaviors
+* @author danilo04
+* @copyright UTP
+*/
+App::import('Model', 'Diticui.Archivo');
+class ArchivoBehavior extends ModelBehavior {
+	
+	/**
+	 * Agrega la configuración del behavior
+	 * @see cake/libs/model/ModelBehavior::setup()
+	 */
+	public function setup(&$Model, $config) {
+		if (!isset($this->settings[$Model->alias])) {
+			$this->settings[$Model->alias] = array(
+				'foreignKey' => 'archivo_id',
+				'writeFile' => Archivo::COPY_FILE,
+				'uploadError' => __('Error al tratar de adjuntar el archivo.', true),
+				'invalidError' => __('Este tipo de archivo no está permitido', true),
+				'sizeError' => __('El archivo sobrepasa el tamaño permitido', true),
+			);
+		}
+		$this->settings[$Model->alias] = am($this->settings[$Model->alias], (array) $config);
+		//Enlazar el modelo Archivo
+		$Model->bindModel(array(
+			'belongsTo' => array(
+				'Archivo' => array(
+					'foreignKey' => $this->settings[$Model->alias]['foreignKey'],
+				)
+			)
+		));
+	}
+	
+	/**
+	 * Crea el archivo en la base de datos y return el id del archivo.
+	 * Si ocurre un error el behavior invalida el campo
+	 * 
+	 * @param object $Model
+	 * @return boolean
+	 */
+	public function beforeSave(&$Model) {
+		if (isset($Model->data[$Model->alias][$this->settings[$Model->alias]['foreignKey']]) && is_numeric($Model->data[$Model->alias][$this->settings[$Model->alias]['foreignKey']])
+           && (!isset($Model->data['Archivo']['archivo']) || $Model->data['Archivo']['archivo']['tmp_name'] == "")) {
+            return true;
+        }
+        if (($Model->data[$Model->alias][$this->settings[$Model->alias]['foreignKey']] = $Model->Archivo->saveFile($Model->data['Archivo']['archivo'], $this->settings[$Model->alias]['writeFile'])) < 1) {
+			switch ($Model->data[$Model->alias][$this->settings[$Model->alias]['foreignKey']]) {
+				case Archivo::ERROR_PHP:
+				case Archivo::ERROR_MOVING_FILE:
+				case Archivo::ERROR_STORE:
+					$Model->invalidate('Archivo.archivo', $this->settings[$Model->alias]['uploadError']);
+					break;
+				case Archivo::ERROR_INVALID_EXTENSION:
+					$Model->invalidate('Archivo.archivo', $this->settings[$Model->alias]['invalidError']);
+					break;
+				case Archivo::ERROR_FILE_SIZE:
+					$Model->invalidate('Archivo.archivo', $this->settings[$Model->alias]['sizeError']);
+					break;				
+			}
+			return false;
+		}		
+		return true;
+	}
+	
+	public function beforeFind($Model, $query) {
+		//Enlazar el modelo Archivo
+		$Model->bindModel(array(
+			'belongsTo' => array(
+				'Archivo' => array(
+					'foreignKey' => $this->settings[$Model->alias]['foreignKey'],
+				)
+			)
+		));
+		parent::beforeFind($Model, $query);
+	}
+}

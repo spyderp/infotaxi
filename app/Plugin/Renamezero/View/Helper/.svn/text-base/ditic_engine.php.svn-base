@@ -1,0 +1,51 @@
+<?php
+/**
+* $Id$
+* MEDUCACOMPA
+*
+* El software MEDUCA COMPRA es propiedad de la UTP. MEDUCA
+* tiene los derechos de uso y personalización del mismo
+* pero no puede comercializar o ceder a ninguna persona natural o jurídica,
+* pública o privada, en ningún tiempo.
+*
+* @package Js
+* @subpackage JqueryEngine
+* @author Ricardo Portillo
+* @copyright UTP
+*/
+App::import('Helper', 'Js');
+App::import('Helper', 'JqueryEngine');
+
+class DiticEngineHelper extends JqueryEngineHelper {
+	var $bufferedMethods = array('event', 'each', 'effect', 'codebox', 'codebox2');
+
+/**
+ * Create an iteration over the current selection result.
+ *
+ * @param string $method The method you want to apply to the selection
+ * @param string $callback The function body you wish to apply during the iteration.
+ * @return string completed iteration
+ * @access public
+ */
+	function each($callback) {
+		return $this->selection . '.each(function () {' . sprintf('$(this).%s',  $callback) . '});';
+	}
+
+/**
+ * Create an iteration over the current selection result.
+ *
+ * @param string $method The method you want to apply to the selection
+ * @param string $callback The function body you wish to apply during the iteration.
+ * @return string completed iteration
+ * @access public
+ */
+	function codebox($callback) {
+		//return $this->selection . '.each(function () {' . $callback . '});';
+		return sprintf('%s.%s', $this->selection, $callback);
+	}
+	function codebox2($callback) {
+		//return $this->selection . '.each(function () {' . $callback . '});';
+		return sprintf('%s', $callback);
+	}
+
+}

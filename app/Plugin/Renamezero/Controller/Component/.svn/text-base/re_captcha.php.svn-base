@@ -1,0 +1,49 @@
+<?php
+/**
+* $Id$
+
+* MEDUCACOMPA
+*
+* El software MEDUCA COMPRA es propiedad de la UTP. 
+* MEDUCA tiene los derechos de uso y personalización del mismo
+* pero no puede comercializar o ceder a ninguna persona natural 
+* o jurídica, pública o privada, en ningún tiempo.
+*
+* @package usuarios
+* @subpackage components
+* @author meduca
+* @copyright UTP
+*/
+App::import('Lib', 'Diticui.Recaptchalib');
+class ReCaptchaComponent extends Object {
+    
+    protected $Controller;
+    protected $_error = '';
+    
+    public function startup(&$controller) {
+        $this->Controller = $controller;
+    } 
+    
+    /**
+     * 
+     * Valida si el captcha introducido es correcto
+     * @return boolean 
+     */
+    public function validCaptcha() {
+        if (!isset($this->Controller->params["form"]["recaptcha_challenge_field"])) return true;
+        
+    	$resp = recaptcha_check_answer (Configure::read('reCaptchaPrivateKey'),
+                                        $_SERVER["REMOTE_ADDR"],
+                                        $this->Controller->params["form"]["recaptcha_challenge_field"],
+                                        $this->Controller->params["form"]["recaptcha_response_field"]);
+        if (!$resp->is_valid)  {
+            $this->_error = $resp->error;
+            return false;
+        }                
+        return true;                      
+    }
+    
+    public function getError() {
+        return $this->_error;
+    }
+}
