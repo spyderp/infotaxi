@@ -35,7 +35,7 @@
 		<figure  class="Imagen">
 			<?php echo $this->Html->image('/'.$user['Usuario']['thumb'], array('alt'=>$user['Usuario']['nombre'].' '.$user['Usuario']['apellido'], 'class'=>'usuarioImagen' )); ?>
 		</figure>
-		<?php echo $this->Html->link('Editar', array('plugin'=>'usuarios', 'controller'=>'usuarios', 'action'=>'editarCliente', $user['Usuario']['id']), array('class'=>'button editUser'));?>
+		<?php echo $this->Html->link('Editar', array('plugin'=>'usuarios', 'controller'=>'usuarios', 'action'=>'editarCliente', $user['Usuario']['id']), array('class'=>'button editButton', 'data-tipo'=>'user'));?>
 	</div>
 	
 </article>
@@ -98,8 +98,8 @@
 				<figure id="fotoTaxi-<?php echo $value['Taxi']['registro_unico']; ?>" class="taxiImagen">
 					<?php echo $this->Html->image('/'.$value['Taxi']['thumb'], array('alt'=>$value['Taxi']['registro_unico'])); ?>
 				</figure>
-				<?php echo $this->Html->link('Editar', array('plugin'=>'taxi', 'controller'=>'taxis', 'action'=>'edit', $value['Taxi']['id']), array('class'=>'button'));?>
-				<?php echo $this->Html->link('Borrar', array('plugin'=>'taxi', 'controller'=>'taxis', 'action'=>'borrar', $value['Taxi']['id']), array('class'=>'button'), __('Desea eliminar este registro', true));?>
+				<?php echo $this->Html->link('Editar', array('plugin'=>'taxi', 'controller'=>'taxis', 'action'=>'edit', $value['Taxi']['id']), array('class'=>'button editButton'));?>
+				<?php echo $this->Html->link('Borrar', array('plugin'=>'taxi', 'controller'=>'taxis', 'action'=>'borrar', $value['Taxi']['id']), array('class'=>'button deleteTaxi'), __('Desea eliminar este registro', true));?>
 			</div>
 		</div>
 			
@@ -136,7 +136,7 @@
 				</ul>
 			</div>
 			<div class="opciones">
-				<?php echo $this->Html->link('Editar', array('plugin'=>'taxi', 'controller'=>'conductor', 'action'=>'edit', $value['Conductor']['id']), array('class'=>'button'));?>
+				<?php echo $this->Html->link('Editar', array('plugin'=>'taxi', 'controller'=>'conductor', 'action'=>'edit', $value['Conductor']['id']), array('class'=>'button editButton'));?>
 				<?php echo $this->Html->link('Borrar', array('plugin'=>'taxi', 'controller'=>'conductor', 'action'=>'borrar', $value['Conductor']['id']), array('class'=>'button'), __('Desea eliminar este registro', true));?>
 			</div>
 		</div>

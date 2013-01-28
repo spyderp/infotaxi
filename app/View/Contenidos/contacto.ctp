@@ -1,3 +1,4 @@
+<article style="height:550px;">
 <?php 
 	echo $this->Formato->titulo(__('Contactenos', true));
 	echo $this->Form->create('Contacto');
@@ -8,3 +9,4 @@
 	echo $this->Form->submit(__('Enviar', true));
 	echo $this->Form->end();
 ?>
+</article>

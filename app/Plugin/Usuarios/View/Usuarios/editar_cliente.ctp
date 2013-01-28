@@ -5,15 +5,16 @@ if(!isset($save)):
 	<?php echo $this->Form->create('Usuario', array('class'=>'usuarioEditForm')); ?>
 		<?php
 			echo $this->Form->input('id');
-			echo $this->Form->input('email', array('disabled'=>'disabled'));
-			echo $this->Form->input('password', array('label'=>'Contraseña'));
-			echo $this->Form->input('password_confirm', array('type'=>'password', 'label'=>'Repetir Contraseña'));
+			echo '<div class="input">'.$this->Form->label('Correo').' '.$this->data['Usuario']['email'].'</div>';
+			echo $this->Form->input('email', array('type'=>'hidden'));
+			echo $this->Form->input('password', array('label'=>'Contraseña', 'class'=>'UsuarioPassword'));
+			echo $this->Form->input('password_confirm', array('type'=>'password', 'label'=>'Repetir Contraseña', 'class'=>'UsuarioPasswordConfirm'));
 			echo $this->Form->input('cedula', array('label'=>'Cédula'));
-			echo $this->Form->input('nombre');
-			echo $this->Form->input('apellido');
-			echo $this->Form->input('direccion');
-			echo $this->Form->input('telefono');
-			echo $this->Form->input('celular');
+			echo $this->Form->input('nombre', array('class'=>'UsuarioNombre'));
+			echo $this->Form->input('apellido', array('class'=>'UsuarioApellido'));
+			echo $this->Form->input('direccion', array('class'=>'UsuarioDireccion', 'label'=>'Dirección'));
+			echo $this->Form->input('telefono', array('class'=>'UsuarioTelefono', 'label'=>'Teléfono'));
+			echo $this->Form->input('celular', array('class'=>'UsuarioCelular'));
 		?>
 	<?php
 	echo $this->Form->submit(__('Guardar', true));

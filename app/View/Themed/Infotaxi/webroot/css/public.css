@@ -22,6 +22,7 @@ nav li a:hover{background-color:#555052; border-color:#000; }
 nav li{ list-style: none; display:inline-block; } 
 #content{ min-height:320px;  padding-bottom:0.625em;}
 #contenido{ transition:all 2s ease;}
+#contenido article{animation:fadeInDown 2s both;}
 #footerBox{background-color:#494325; }
 #headerBox{background:url(../img/header_bg.jpg) #5b97bc repeat-x bottom;}
 #left, #section{ display:inline-block; vertical-align: top;}
@@ -70,4 +71,15 @@ nav li{ list-style: none; display:inline-block; }
     0%, 100% {transform: translateX(0);}
 	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
 	20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+@keyframes fadeInDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
