@@ -63,17 +63,17 @@
 			<controller>taxis</controller>
 			<action>add</action>
 		</privilege>
-		<privilege id="taxis_getAdd" label="Agregar Vehiculo">
+		<privilege id="taxis_getAdd" label="Agregar Taxi (cliente)">
 			<controller>taxis</controller>
-			<action>getAdd</action>
+			<action>agregar</action>
 		</privilege>
 		<privilege id="taxis_edit" label="Editar Taxi">
 			<controller>taxis</controller>
 			<action>edit</action>
 		</privilege>
-		<privilege id="taxis_editCliente" label="Editar Vehiculo">
+		<privilege id="taxis_editarTaxi" label="Editar taxi (cliente)">
 			<controller>taxis</controller>
-			<action>editCliente</action>
+			<action>editarTaxi</action>
 		</privilege>
 		<privilege id="taxis_delete" label="Eliminar Taxi">
 			<controller>taxis</controller>
@@ -93,13 +93,17 @@
 			<controller>conductores</controller>
 			<action>add</action>
 		</privilege>
-		 	<privilege id="conductores_anotherAdd" label="Agregar otros taxis">
+		 	<privilege id="conductores_agregar" label="Agregar conductor (cliente)">
 			<controller>conductores</controller>
-			<action>anotherAdd</action>
+			<action>agregar</action>
 		</privilege>
 		<privilege id="conductores_edit" label="Editar Conductor">
 			<controller>conductores</controller>
 			<action>edit</action>
+		</privilege>
+		<privilege id="conductores_editarConductor" label="Editar Conductor (cliente)">
+			<controller>conductores</controller>
+			<action>editarConductor</action>
 		</privilege>
     	<privilege id="conductores_setIndex" label="Listar Conductores x vehiculo">
 			<controller>conductores</controller>

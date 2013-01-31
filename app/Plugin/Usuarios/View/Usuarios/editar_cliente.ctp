@@ -2,7 +2,7 @@
 if(!isset($save)):
 ?>
 	<div  title="Datos a editar" class="usuarios form">
-	<?php echo $this->Form->create('Usuario', array('class'=>'usuarioEditForm')); ?>
+	<?php echo $this->Form->create('Usuario', array('class'=>'editForm')); ?>
 		<?php
 			echo $this->Form->input('id');
 			echo '<div class="input">'.$this->Form->label('Correo').' '.$this->data['Usuario']['email'].'</div>';
@@ -18,7 +18,7 @@ if(!isset($save)):
 		?>
 	<?php
 	echo $this->Form->submit(__('Guardar', true));
-	echo '<div class="submit">'.$this->Form->button('Cancelar', array('class'=>'cancelButton')).'</div>';	
+	echo '<div class="submit">'.$this->Form->button('Cancelar', array('class'=>'cancelDialog')).'</div>';	
 	echo $this->Form->end(); ?>
 	</div>
 <?php

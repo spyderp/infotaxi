@@ -1,22 +1,18 @@
 <?php
-	echo $this->Html->script('combobox');
-	$this->Js->get('document');
-	$this->Js->event('ready', "
-		$('.usuarioBox').combobox();
-	");
+
 $year=array();
 for($i=date('Y'); $i>=1970; $i--){
-	$year[]=$i;
+	$year[$i]=$i;
 }
 ?>
 
-<?php echo $this->Formato->titulo(__('Agregar Taxi', true)); ?>
+<?php echo $this->Formato->titulo(__('Agregar nuevo Vehiculo', true)); ?>
 <div class="taxis form">
 <?php echo $this->Form->create('Taxi', array('type'=>'file')); ?>
 	<fieldset>
 		<legend><?php echo __('Datos'); ?></legend>
 	<?php
-		echo $this->Form->input('usuario_id', array('class'=>'usuarioBox'));
+		echo $this->Form->input('usuario_id', array('type'=>'hidden', 'value'=>$usuarioId));
 		echo $this->Form->input('registro_unico', array('label'=>'Registro único'));
 		echo $this->Form->input('numero_chasis', array('label'=>'Número de chasis'));
 		echo $this->Form->input('placa_carro', array('label'=>'Placa del carro'));
@@ -24,7 +20,7 @@ for($i=date('Y'); $i>=1970; $i--){
 		echo $this->Form->input('marca_id');
 		echo $this->Form->input('modelo');
 		echo $this->Form->input('year', array('options'=>$year, 'label'=>'Año del carro'));
-		echo $this->Form->input('grupo', array('label'=>'Coperativa/compañia'));
+		echo $this->Form->input('grupo', array('label'=>'Cooperativa/compañia'));
 		echo $this->Form->input('zona_trabajo', array('label'=>'Zona en que trabaja'));
 		echo $this->Form->input('telefono_contacto', array('label'=>'Teléfono de Contacto'));
 		echo $this->Form->input('file.image', array('label'=>'Imagen adjunta', 'type'=>'file'));

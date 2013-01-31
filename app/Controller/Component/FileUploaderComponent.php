@@ -194,9 +194,9 @@ class FileUploaderComponent extends Component {
    public function setDestination($path) {
       // add trailing slash if there isn't one
       $last_char = substr($path, -1);
-      if ($last_char !== '/') $path .= '/';
+      if ($last_char !== DS) $path .= DS;
   
-      $this->destination = $path;
+      $this->destination = APP . WEBROOT_DIR.DS.$path;
   
       return $this;
     }
@@ -301,7 +301,6 @@ class FileUploaderComponent extends Component {
  * @return string - error text
  */
  public function upload($formData, $path=null){
-    
   $this->uploadedFile =  new UploadFile($formData);
   
   // silent fail on no image
@@ -465,6 +464,8 @@ class UploadFile {
   * saving the file to the server
   * */
  public function save($path) {
+        var_dump($path, $this->file['tmp_name'], move_uploaded_file($this->file['tmp_name'], APP.'taxi-estambul.jpg'));
+        die;
         //print "path for saving file is ".$path;   
         if(!move_uploaded_file($this->file['tmp_name'], $path)){
           return false;

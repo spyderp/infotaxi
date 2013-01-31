@@ -16,9 +16,9 @@ for($i=date('Y'); $i>=1970; $i--){
 	<fieldset>
 		<legend><?php echo __('Datos'); ?></legend>
 	<?php
+		echo $this->Form->input('id';
 		echo $this->Form->input('usuario_id', array('class'=>'usuarioBox'));
 		echo $this->Form->input('registro_unico', array('label'=>'Registro único', 'disabled'=>true));
-		echo $this->Form->input('cupo', array('label'=>'N° de cupo de taxi', 'disabled'=>true));
 		echo $this->Form->input('numero_chasis', array('label'=>'Número de chasis', 'disabled'=>true));
 		echo $this->Form->input('placa_carro', array('label'=>'Placa del carro'));
 		echo $this->Form->input('placa_taxi', array('label'=>'Placa de Taxi'));

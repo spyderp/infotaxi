@@ -67,9 +67,39 @@ class TaxisController extends TaxiAppController {
 		}
 		$marcas = $this->Taxi->Marca->find('list', array('fields'=>array('id','nombre'), 'order'=>'nombre'));
 		$usuarios = $this->Taxi->Usuario->find('list', array('fields'=>array('id','cedula'), 'conditions'=>array('rol_id'=>4)));
-		$this->set(compact('marcas', 'usuarios', 'estados'));
+		$this->set(compact('marcas', 'usuarios'));
 	}
 
+/**
+ * agregar method
+ *
+ * @param $usuarioId
+ * @return void
+ */
+	public function agregar($usuarioId) {
+		if ($this->request->is('post')) {
+			$data=Sanitize::clean($this->request->data);
+			$file = $data['file']['image'];
+			$upload=$this->unploadConfig($file);
+			$msg='';
+			if($upload['bool']):
+				$this->request->data['Taxi']['image']=$upload['file_path'];
+				$this->request->data['Taxi']['thumb']=$upload['thumb_path'];
+			else:
+				$this->request->data['Taxi']['image']='';
+				$msg="Error al subir archivo:".$upload['error_message'];
+			endif;
+			$this->Taxi->create();
+			if ( $this->Taxi->save($this->request->data)) {
+				$this->_setMessage(__('Se ha guardado el nuevo vehiculo'));
+				$this->redirect(array('action' => 'home'));
+			} else {
+				$this->_setMessage(__('No se ha podido guardar los datos. por favor intente nuevamente. '.$msg),self::ERROR);
+			}
+		}
+		$marcas = $this->Taxi->Marca->find('list', array('fields'=>array('id','nombre'), 'order'=>'nombre'));
+		$this->set(compact('marcas', 'usuarioId'));
+	}
 /**
  * edit method
  *
@@ -105,6 +135,45 @@ class TaxisController extends TaxiAppController {
 		$usuarios = $this->Taxi->Usuario->find('list', array('fields'=>array('id','cedula'), 'conditions'=>array('rol_id'=>4)));
 		$this->set(compact('marcas', 'usuarios', 'estados', 'img'));
 	}
+
+/**
+ * editaTaxi method
+ *
+ * @author Ricardo Portillo
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function editarTaxi($id = null) {
+		if ($this->request->is('ajax')){
+			$this->layout="ajax";
+			$this->Taxi->id = Sanitize::clean($id);
+			if ($this->request->is('post') || $this->request->is('put')) {
+				$save=true;
+				$data=Sanitize::clean($this->request->data);
+				$msg='';
+
+				if ($this->Taxi->save($this->request->data)) {
+					$this->_setMessage(__('Se han actualizado los datos del vehiculo'));
+					$success=1;
+					$datos=$this->request->data;
+				} else {
+					$this->_setMessage(__('No se ha podido actualizar los datos. por favor intente nuevamente'), self::ERROR);
+					$success=0;
+					$datos=$this->Usuario->invalidFields();
+				}
+				$this->set(compact('save', 'datos', 'success'));
+			} else {
+				$this->request->data = $this->Taxi->read(null, $id);
+				$marcas = $this->Taxi->Marca->find('list', array('fields'=>array('id','nombre')));
+				$this->set(compact('marcas'));
+			}
+		}
+		if (!$this->Taxi->exists()) {
+			throw new NotFoundException(__('Invalid taxi'));
+		}
+	}
+
 
 /**
  * delete method

@@ -42,6 +42,9 @@
 <h2>
 	Lista de Taxi
 </h2>
+<div class="addButtonBox">
+<?php echo $this->Html->link('Agregar nuevo taxis', array('plugin'=>'taxi', 'controller'=>'taxis', 'action'=>'agregar', $user['Usuario']['id']), array('class'=>'button'));?>
+</div>
 <article class="taxiDetalles">
 	<div id="accordion-taxi">
 	<?php
@@ -58,37 +61,37 @@
 						<?php echo $this->Form->label('Número de chasis:'); ?>
 						<?php echo $value['Taxi']['numero_chasis']; ?>
 					</li>
-					<li>
+					<li class="placa_carro">
 						<?php echo $this->Form->label('Placa:'); ?>
-						<?php echo $value['Taxi']['placa_carro']; ?>
+						<span><?php echo $value['Taxi']['placa_carro']; ?></span>
 					</li>
 					<li>
 						<?php echo $this->Form->label('Placa de Taxi:'); ?>
-						<?php echo $value['Taxi']['placa_taxi']; ?>
+						<span><?php echo $value['Taxi']['placa_taxi']; ?>
 					</li>
-					<li>
+					<li class="MarcaNombre">
 						<?php echo $this->Form->label('Marca:'); ?>
-						<?php echo $value['Marca']['nombre']; ?>
-					</li>
-					<li>
+						<?php echo $value['Marca']['nombre']; ?></span>
+					</li></span>
+					<li class="modelo">
 						<?php echo $this->Form->label('Modelo:'); ?>
-						<?php echo $value['Taxi']['modelo']; ?>
+						<span><?php echo $value['Taxi']['modelo']; ?></span>
 					</li>
-					<li>
+					<li class="year">
 						<?php echo $this->Form->label('Año:'); ?>
-						<?php echo $value['Taxi']['year']; ?>
+						<span><?php echo $value['Taxi']['year']; ?></span>
 					</li>
-					<li>
+					<li class="grupo">
 						<?php echo $this->Form->label('Cooperativa/Empresa:'); ?>
-						<?php echo $value['Taxi']['grupo']; ?>
+						<span><?php echo $value['Taxi']['grupo']; ?></span>
 					</li>
-					<li>
+					<li class="zona_trabajo">
 						<?php echo $this->Form->label('Zona de Trabajo:'); ?>
-						<?php echo $value['Taxi']['zona_trabajo']; ?>
+						<span><?php echo $value['Taxi']['zona_trabajo']; ?></span>
 					</li>
-					<li>
+					<li class="telefono_contacto">
 						<?php echo $this->Form->label('Teléfono de Contacto:'); ?>
-						<?php echo $value['Taxi']['telefono_contacto']; ?>
+						<span><?php echo $value['Taxi']['telefono_contacto']; ?></span>
 					</li>
 				</ul>
 				
@@ -98,7 +101,7 @@
 				<figure id="fotoTaxi-<?php echo $value['Taxi']['registro_unico']; ?>" class="taxiImagen">
 					<?php echo $this->Html->image('/'.$value['Taxi']['thumb'], array('alt'=>$value['Taxi']['registro_unico'])); ?>
 				</figure>
-				<?php echo $this->Html->link('Editar', array('plugin'=>'taxi', 'controller'=>'taxis', 'action'=>'edit', $value['Taxi']['id']), array('class'=>'button editButton'));?>
+				<?php echo $this->Html->link('Editar', array('plugin'=>'taxi', 'controller'=>'taxis', 'action'=>'editarTaxi', $value['Taxi']['id']), array('class'=>'button editButton', 'data-tipo'=>'taxi'));?>
 				<?php echo $this->Html->link('Borrar', array('plugin'=>'taxi', 'controller'=>'taxis', 'action'=>'borrar', $value['Taxi']['id']), array('class'=>'button deleteTaxi'), __('Desea eliminar este registro', true));?>
 			</div>
 		</div>
@@ -110,6 +113,9 @@
 <h2>
 	Lista de Conductores
 </h2>
+<div class="addButtonBox">
+<?php echo $this->Html->link('Agregar nuevo conductor', array('plugin'=>'taxi', 'controller'=>'conductores', 'action'=>'agregar', $user['Usuario']['id']), array('class'=>'button'));?>
+</div>
 <arcticle class="conductoresDetalles">
 	<div id="accordion-conductores">
 	<?php
@@ -125,19 +131,19 @@
 					<?php echo $this->Html->image('/'.$value['Conductor']['thumb'], array('alt'=>$value['Conductor']['nombre'].' '.$value['Conductor']['apellido'])); ?>
 				</figure>
 				<ul>
-					<li>
+					<li class="nombre">
 						<?php echo $this->Form->label('Nombre:'); ?>
 						<?php echo $value['Conductor']['nombre'].' '.$value['Conductor']['apellido']; ?>
 					</li>
-					<li>
+					<li class="celular">
 						<?php echo $this->Form->label('Celular:'); ?>
-						<?php echo $value['Conductor']['celular']; ?>
+						<span><?php echo $value['Conductor']['celular']; ?></span>
 					</li>
 				</ul>
 			</div>
 			<div class="opciones">
-				<?php echo $this->Html->link('Editar', array('plugin'=>'taxi', 'controller'=>'conductor', 'action'=>'edit', $value['Conductor']['id']), array('class'=>'button editButton'));?>
-				<?php echo $this->Html->link('Borrar', array('plugin'=>'taxi', 'controller'=>'conductor', 'action'=>'borrar', $value['Conductor']['id']), array('class'=>'button'), __('Desea eliminar este registro', true));?>
+				<?php echo $this->Html->link('Editar', array('plugin'=>'taxi', 'controller'=>'conductores', 'action'=>'editarConductor', $value['Conductor']['id']), array('class'=>'button editButton', 'data-tipo'=>'conductor'));?>
+				<?php echo $this->Html->link('Borrar', array('plugin'=>'taxi', 'controller'=>'conductores', 'action'=>'borrar', $value['Conductor']['id']), array('class'=>'button'), __('Desea eliminar este registro', true));?>
 			</div>
 		</div>
 	<?php

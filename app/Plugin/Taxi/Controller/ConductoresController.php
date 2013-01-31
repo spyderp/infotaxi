@@ -99,6 +99,39 @@ class ConductoresController extends TaxiAppController {
 		$taxis = $this->Conductor->Taxi->find('list');
 		$this->set(compact('taxis', 'img'));
 	}
+	/**
+ * edit method
+ *
+ * @throws NotFoundException
+ * @param string $id
+ * @return void
+ */
+	public function editarConductor($id = null) {
+		if ($this->request->is('ajax')){
+			$this->layout="ajax";
+			$this->Conductor->id = $id;
+			if ($this->request->is('post') || $this->request->is('put')) {
+				$save=true;
+				$data=Sanitize::clean($this->request->data);
+				if ($this->Conductor->save($this->request->data)) {
+					$this->_setMessage(__('Se han actualizado los datos'));
+					$success=1;
+					$datos=$this->request->data;
+				} else {
+					$this->_setMessage(__('No se pudo actualizar los datos. Intente nuevamente'), self::ERROR);
+					$success=0;
+					$datos=$this->Conductor->invalidFields();
+				}
+				$this->set(compact('save', 'datos', 'success'));
+			} else {
+				$this->request->data = $this->Conductor->read(null, $id);
+			}
+			
+		}else{
+			throw new NotFoundException(__('Invalido Acceso'));
+		}
+	}
+
 
 /**
  * delete method
