@@ -48,11 +48,24 @@ class ConductoresController extends TaxiAppController {
 		$taxis = $this->Conductor->Taxi->find('list',array('fields'=>array('id', 'placa_carro')));
 		$this->set(compact('taxis'));
 	}
-	public function anotherAdd($id= null) {
+
+
+	public function agregar($id= null) {
 		if ($this->request->is('post')) {
+			$data=Sanitize::clean($this->request->data);
+			$file = $data['file']['image'];
+			$upload=$this->unploadConfig($file);
+			$msg='';
+			if($upload['bool']):
+				$this->request->data['Conductor']['image']=$upload['file_path'];
+				$this->request->data['Conductor']['thumb']=$upload['thumb_path'];
+			else:
+				$this->request->data['Conductor']['image']='';
+				$msg="Error al subir archivo:".$upload['error_message'];
+			endif;
 			if ($this->Conductor->save($this->request->data)) {
 				$this->_setMessage(__('Se ha guardado el conductor'));
-				$this->redirect(array('action' => 'index'));
+				$this->redirect(array('action' => 'home'));
 			} else {
 				$this->_setMessage(__('No se pudo guardar el conductor. Intente nuevamente. '.$msg), self::ERROR);
 			}
@@ -63,6 +76,7 @@ class ConductoresController extends TaxiAppController {
 		$this->set(compact('taxis'));
 			
 	}
+
 
 /**
  * edit method

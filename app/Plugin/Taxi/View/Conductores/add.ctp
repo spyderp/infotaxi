@@ -1,9 +1,4 @@
 <?php
-	echo $this->Html->script('combobox');
-	$this->Js->get('document');
-	$this->Js->event('ready', "
-		$('.taxiBox').combobox();
-	");
 $year=array();
 for($i=date('Y'); $i>=1970; $i--){
 	$year[]=$i;
@@ -16,7 +11,7 @@ for($i=date('Y'); $i>=1970; $i--){
 	<fieldset>
 		<legend><?php echo __('Datos'); ?></legend>
 <?php
-	echo $this->Form->input('Taxi.id', array('class'=>'taxiBox', 'options'=>$taxis, 'label'=>'Taxi', 'empty'=>''));
+	echo $this->Form->input('Taxi.id', array('class'=>'taxiBox', 'options'=>$taxis, 'label'=>'Taxi', 'empty'=>'',  'multiple' => true));
 	echo $this->Form->input('cedula');
 	echo $this->Form->input('nombre');
 	echo $this->Form->input('apellido');
