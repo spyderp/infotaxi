@@ -464,8 +464,6 @@ class UploadFile {
   * saving the file to the server
   * */
  public function save($path) {
-        var_dump($path, $this->file['tmp_name'], move_uploaded_file($this->file['tmp_name'], $path));
-        die;
         //print "path for saving file is ".$path;   
         if(!move_uploaded_file($this->file['tmp_name'], $path)){
           return false;
